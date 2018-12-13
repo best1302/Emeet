@@ -1,14 +1,14 @@
 <?php
 
-class home extends CI_Controller{
+class add extends CI_Controller{
 
     function __construct(){
         parent::__construct();
     }
 
-    function index(){
+    function add1(){
         $this->load->view('header');
-        $this->load->view('calendar');
+        $this->load->view('convene');
         
     }
 }

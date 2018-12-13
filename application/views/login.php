@@ -27,7 +27,7 @@
 <![endif]-->
 </head>
 
-<body class="fix-header card-no-border logo-center">
+<body>
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -38,29 +38,69 @@
     <!-- ============================================================== -->
     <!-- Main wrapper - style you can find in pages.scss -->
     <!-- ============================================================== -->
-    <div id="main-wrapper">
-        <!-- ============================================================== -->
-        <!-- Topbar header - style you can find in pages.scss -->
-        <!-- ============================================================== -->
-        <header class="topbar" style="background: linear-gradient(to left, #33ccff 0%, #ffffff 100%);">
-            <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                <img src="/Emeet/assets/img/csmju_logo.gif" width="200px" height="100px">
-                <div class="text">
-                    <span>ระบบจัดการข้อมูลการประชุมอิเล็กทรอนิกส์ (Electronic Meeting Management System) </span>
-                </div>
-
-            </nav>
-        </header>
-       
-           
-            <!-- ============================================================== -->
-            <!-- End footer -->
-            <!-- ============================================================== -->
+    <section id="wrapper" class="login-register login-sidebar"  style="background: linear-gradient(to left, #33ccff 0%, #ffffff 100%);">
+  <div class="login-box card">
+    <div class="card-body">
+      <form class="form-horizontal form-material ttop" id="loginform" >
+        <a href="javascript:void(0)" class="text-center db"><img src="/Emeet/assets/img/logo_custom1.gif" alt="Home" /><br/></a> 
+        <div class="form-group m-t-40">
+          <div class="col-xs-12">
+            <input class="form-control" type="text" required="" placeholder="Username">
+          </div>
         </div>
-        <!-- ============================================================== -->
-        <!-- End Page wrapper  -->
-        <!-- ============================================================== -->
+        <div class="form-group">
+          <div class="col-xs-12">
+            <input class="form-control" type="password" required="" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-md-12">
+            <div class="checkbox checkbox-primary pull-left p-t-0">
+              <input id="checkbox-signup" type="checkbox">
+              <label for="checkbox-signup"> Remember me </label>
+            </div>
+            <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> Forgot pwd?</a> </div>
+        </div>
+        <div class="form-group text-center m-t-20">
+          <div class="col-xs-12">
+            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light " type="submit">Log In</button>
+          </div>
+        </div>
+      </form>
+      <form class="form-horizontal" id="recoverform" action="index.html">
+        <div class="form-group ">
+          <div class="col-xs-12">
+            <h3>Recover Password</h3>
+            <p class="text-muted">Enter your Email and instructions will be sent to you! </p>
+          </div>
+        </div>
+        <div class="form-group ">
+          <div class="col-xs-12">
+            <input class="form-control" type="text" required="" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-group text-center m-t-20">
+          <div class="col-xs-12">
+            <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit">Reset</button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
+  <div class="rignt">
+      <div class="text4">
+          <span>ระบบจัดการข้อมูลการประชุมอิเล็กทรอนิกส์</span>
+      </div>
+      <div class="text4">
+          <span>(Electronic Meeting Management System)</span>
+      </div>
+      <div class="rignt2">
+          <img src="/Emeet/assets/img/csmju_logo.gif" width="400px" height="200px">
+      </div>
+      
+  </div> 
+
+</section>
     <!-- ============================================================== -->
     <!-- End Wrapper -->
     <!-- ============================================================== -->

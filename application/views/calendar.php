@@ -9,16 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Emeet/assets/images/">
     <title>Electronic Meeting Management System</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Emeet/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Calendar CSS -->
-    <link href="/assets/plugins/calendar/dist/fullcalendar.css" rel="stylesheet" />
+    <link href="/Emeet/assets/plugins/calendar/dist/fullcalendar.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="/assets/css/style.css" rel="stylesheet">
+    <link href="/Emeet/assets/css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="/assets/css/colors/blue.css" id="theme" rel="stylesheet">
+    <link href="/Emeet/assets/css/colors/blue.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -42,15 +42,7 @@
         <!-- ============================================================== -->
         <!-- Topbar header - style you can find in pages.scss -->
         <!-- ============================================================== -->
-        <header class="topbar" style="background: linear-gradient(to left, #33ccff 0%, #ffffff 100%);">
-            <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                <img src="/New folder/img/csmju_logo.gif" width="200px" height="100px">
-                <div class="text">
-                    <span>ระบบจัดการข้อมูลการประชุมอิเล็กทรอนิกส์ (Electronic Meeting Management System) </span>
-                </div>
-
-            </nav>
-        </header>
+        
         <div class="page-wrapper">
             <div class="container-fluid">
                 <div class="row page-titles">
@@ -61,7 +53,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body">
-                                <img src="/New folder/1.png" width="100%" height="100%">
+                            <img src="/Emeet/assets/img/1.png" width="100%" height="100%">
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div id="calendar-events" class="m-t-20">
@@ -269,7 +261,7 @@
                                         </div>
                                         <div class="col-md-6">
                                             <label class="control-label">Choose Category Color</label>
-                                            <select class="form-control form-white" data-placeholder="Choose a color."
+                                            <select class="form-control form-white" data-placeholder="Choose a color..."
                                                 name="category-color">
                                                 <option value="success">Success</option>
                                                 <option value="danger">Danger</option>
@@ -322,35 +314,35 @@
                             <ul class="m-t-20 chatonline">
                                 <li><b>Chat option</b></li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/1.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/1.jpg" alt="user-img"
                                             class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/2.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/2.jpg" alt="user-img"
                                             class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/3.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/3.jpg" alt="user-img"
                                             class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/4.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/4.jpg" alt="user-img"
                                             class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/5.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/5.jpg" alt="user-img"
                                             class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/6.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/6.jpg" alt="user-img"
                                             class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/7.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/7.jpg" alt="user-img"
                                             class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)"><img src="/assets/images/users/8.jpg" alt="user-img"
+                                    <a href="javascript:void(0)"><img src="../assets/images/users/8.jpg" alt="user-img"
                                             class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
                                 </li>
                             </ul>
@@ -362,7 +354,7 @@
                 <!--<div class="card-body">
                     <div class="row">
                         <div class="col-md-4 photo">
-                            <img src="/New folder/img/คณะวิทยาศาสตร์แม่โจ้.jpg" width="100px" height="100px">
+                            <img src="../New folder/img/คณะวิทยาศาสตร์แม่โจ้.jpg" width="100px" height="100px">
                         </div>
                         <div class="col-md-4">
                             <h5 class="text3">Contact Us</h5>
@@ -377,7 +369,7 @@
                     </div>
                 </div> -->
             </footer>
-            <!-- ============================================================== -->
+              <!-- ============================================================== -->
             <!-- End footer -->
             <!-- ============================================================== -->
         </div>
@@ -391,30 +383,30 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="/Emeet/assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="/assets/plugins/bootstrap/js/popper.min.js"></script>
-    <script src="/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Emeet/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="/E-meeting/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="/assets/js/jquery.slimscroll.js"></script>
+    <script src="/Emeet/assets/js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
-    <script src="/assets/js/waves.js"></script>
+    <script src="/Emeet/assets/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="/assets/js/sidebarmenu.js"></script>
+    <script src="/Emeet/assets/js/sidebarmenu.js"></script>
     <!--stickey kit -->
-    <script src="/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <script src="/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/Emeet/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="/Emeet/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
     <!--Custom JavaScript -->
-    <script src="/assets/js/custom.min.js"></script>
+    <script src="/Emeet/assets/js/custom.min.js"></script>
     <!-- Calendar JavaScript -->
-    <script src="/assets/plugins/calendar/jquery-ui.min.js"></script>
-    <script src="/assets/plugins/moment/moment.js"></script>
-    <script src='/assets/plugins/calendar/dist/fullcalendar.min.js'></script>
-    <script src="/assets/plugins/calendar/dist/cal-init.js"></script>
+    <script src="/Emeet/assets/plugins/calendar/jquery-ui.min.js"></script>
+    <script src="/Emeet/assets/plugins/moment/moment.js"></script>
+    <script src='/Emeet/assets/plugins/calendar/dist/fullcalendar.min.js'></script>
+    <script src="/Emeet/assets/plugins/calendar/dist/cal-init.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
-    <script src="/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="/Emeet/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
 
 </html>
