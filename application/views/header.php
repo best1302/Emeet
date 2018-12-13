@@ -9,16 +9,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/E-meeting/assets/images/">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Emeet/assets/images/">
     <title>Electronic Meeting Management System</title>
     <!-- Bootstrap Core CSS -->
-    <link href="/E-meeting/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/Emeet/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!-- Calendar CSS -->
-    <link href="/E-meeting/assets/plugins/calendar/dist/fullcalendar.css" rel="stylesheet" />
+    <link href="/Emeet/assets/plugins/calendar/dist/fullcalendar.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="/E-meeting/assets/css/style.css" rel="stylesheet">
+    <link href="/Emeet/assets/css/style.css" rel="stylesheet">
     <!-- You can change the theme colors from here -->
-    <link href="/E-meeting/assets/css/colors/blue.css" id="theme" rel="stylesheet">
+    <link href="/Emeet/assets/css/colors/blue.css" id="theme" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,7 +44,7 @@
         <!-- ============================================================== -->
         <header class="topbar" style="background: linear-gradient(to left, #33ccff 0%, #ffffff 100%);">
             <nav class="navbar top-navbar navbar-expand-md navbar-light">
-                <img src="/E-meeting/assets/img/csmju_logo.gif" width="200px" height="100px">
+                <img src="/Emeet/assets/img/csmju_logo.gif" width="200px" height="100px">
                 <div class="text">
                     <span>ระบบจัดการข้อมูลการประชุมอิเล็กทรอนิกส์ (Electronic Meeting Management System) </span>
                 </div>
@@ -61,7 +61,7 @@
                     <div class="col-md-3">
                         <div class="card">
                             <div class="card-body">
-                                <img src="/E-meeting/assets/img/1.png" width="100%" height="100%">
+                                <img src="/Emeet/assets/img/1.png" width="100%" height="100%">
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <div id="calendar-events" class="m-t-20">
@@ -132,30 +132,30 @@
     <!-- ============================================================== -->
     <!-- All Jquery -->
     <!-- ============================================================== -->
-    <script src="/E-meeting/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="/Emeet/assets/plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
-    <script src="/E-meeting/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="/Emeet/assets/plugins/bootstrap/js/popper.min.js"></script>
     <script src="/E-meeting/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <!-- slimscrollbar scrollbar JavaScript -->
-    <script src="/E-meeting/assets/js/jquery.slimscroll.js"></script>
+    <script src="/Emeet/assets/js/jquery.slimscroll.js"></script>
     <!--Wave Effects -->
-    <script src="/E-meeting/assets/js/waves.js"></script>
+    <script src="/Emeet/assets/js/waves.js"></script>
     <!--Menu sidebar -->
-    <script src="/E-meeting/assets/js/sidebarmenu.js"></script>
+    <script src="/Emeet/assets/js/sidebarmenu.js"></script>
     <!--stickey kit -->
-    <script src="/E-meeting/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <script src="/E-meeting/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <script src="/Emeet/assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <script src="/Emeet/assets/plugins/sparkline/jquery.sparkline.min.js"></script>
     <!--Custom JavaScript -->
-    <script src="/E-meeting/assets/js/custom.min.js"></script>
+    <script src="/Emeet/assets/js/custom.min.js"></script>
     <!-- Calendar JavaScript -->
-    <script src="/E-meeting/assets/plugins/calendar/jquery-ui.min.js"></script>
-    <script src="/E-meeting/assets/plugins/moment/moment.js"></script>
-    <script src='/E-meeting/assets/plugins/calendar/dist/fullcalendar.min.js'></script>
-    <script src="/E-meeting/assets/plugins/calendar/dist/cal-init.js"></script>
+    <script src="/Emeet/assets/plugins/calendar/jquery-ui.min.js"></script>
+    <script src="/Emeet/assets/plugins/moment/moment.js"></script>
+    <script src='/Emeet/assets/plugins/calendar/dist/fullcalendar.min.js'></script>
+    <script src="/Emeet/assets/plugins/calendar/dist/cal-init.js"></script>
     <!-- ============================================================== -->
     <!-- Style switcher -->
     <!-- ============================================================== -->
-    <script src="/E-meeting/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+    <script src="/Emeet/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
 </body>
 
 </html>
