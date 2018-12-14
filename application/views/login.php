@@ -62,9 +62,9 @@
             <a href="javascript:void(0)" id="to-recover" class="text-dark pull-right"><i class="fa fa-lock m-r-5"></i> Forgot pwd?</a> </div>
         </div>
         <div class="form-group text-center m-t-20">
-          <div class="col-xs-12">
-            <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light " type="submit">Log In</button>
-          </div>
+        <div class="col-xs-12">
+          <button class="btn btn-info btn-lg btn-block text-uppercase waves-effect waves-light " type="submit" ><a href="http://localhost/Emeet/index.php/home">Log In</button>
+          </div></a>
         </div>
       </form>
       <form class="form-horizontal" id="recoverform" action="index.html">
