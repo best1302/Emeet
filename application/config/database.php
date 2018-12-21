@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '1234',
+	'hostname' => '202.28.37.133',
+	'username' => 'user01',
+	'password' => '123456',
 	'database' => 'Emeeting',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
