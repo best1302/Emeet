@@ -28,6 +28,7 @@
 </head>
 
 <body>
+
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -41,7 +42,7 @@
     <section id="wrapper" class="login-register login-sidebar"  style="background: linear-gradient(to left, #33ccff 0%, #ffffff 100%);">
   <div class="login-box card">
     <div class="card-body">
-      <form class="form-horizontal form-material ttop" id="loginform" >
+      <form action="index.php/home" class="form-horizontal form-material ttop" id="loginform" >
         <a href="javascript:void(0)" class="text-center db"><img src="/Emeet/assets/img/logo_custom1.gif" alt="Home" /><br/></a> 
         <div class="form-group m-t-40">
           <div class="col-xs-12">

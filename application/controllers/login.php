@@ -8,6 +8,7 @@ class login extends CI_Controller{
 
     function login1(){
         $this->load->view('login');
+    
         
     }
 }
