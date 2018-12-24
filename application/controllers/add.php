@@ -11,5 +11,11 @@ class add extends CI_Controller{
         $this->load->view('convene');
         
     }
+    function add2(){
+        $this->load->view('header');
+        $this->load->view('adduser');
+        
+        
+    }
 }
 
