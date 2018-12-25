@@ -66,7 +66,11 @@
                     <div class="card">
                             <div class="card-body text3">
                             <div class="col-sm-12 col-xs-12">
+<<<<<<< HEAD
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
+=======
+                                <center><h2 class="text3">เพิ่มรายชื่อบุคคลากร</h2></center>
+>>>>>>> master
                             <form>
                             <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">ID :</label>
@@ -99,6 +103,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
+                                        <label class="col-sm-3 text-right control-label col-form-label">Photo upload</label>
+                                        <div class="col-sm-6 fileinput fileinput-new input-group" data-provides="fileinput">
+                                            <div class="form-control" data-trigger="fileinput"> <i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div> <span class="input-group-addon btn btn-default btn-file"> <span class="fileinput-new">Select file</span> <span class="fileinput-exists">Change</span>
+                                            <input type="hidden">
+                                            <input type="file" name="..."> </span> <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
+                                    </div>
+                                <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Username :</label>
                                     <div class="col-sm-6">
                                         <input type="text" class="form-control">
@@ -115,11 +126,20 @@
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control">
                                     </div>
+<<<<<<< HEAD
                                 </div>
                                 <div>
                                         <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                         </div> 
+=======
+                                </div>   
+                                <div class="col-sm-3 text-right control-label col-form-label"></div>
+                                <div class="col-sm-6" style=" padding-left: 250px;">                  
+                                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
+                                        <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
+                                </div>
+>>>>>>> master
                                     </form>
                                     </div> 
                             </div>
