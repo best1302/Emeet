@@ -122,20 +122,11 @@
                                     <div class="col-sm-6">
                                         <input type="password" class="form-control">
                                     </div>
-<<<<<<< HEAD
                                 </div>
                                 <div>
                                         <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                         </div> 
-=======
-                                </div>   
-                                <div class="col-sm-3 text-right control-label col-form-label"></div>
-                                <div class="col-sm-6" style=" padding-left: 250px;">                  
-                                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
-                                        <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
-                                </div>
->>>>>>> master
                                     </form>
                                     </div> 
                             </div>
