@@ -1,5 +1,6 @@
 
 <body class="fix-header card-no-border logo-center">
+    <?php echo form_open('register/validate'); ?>
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->

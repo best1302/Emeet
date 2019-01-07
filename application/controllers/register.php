@@ -11,7 +11,8 @@ class Register extends CI_Controller {
 	}
 	public function index()
 	{
-		$this->load->view('login'); // เข้ามาครั้งแรกให้โหลด register_view มาแสดง
+		$this->load->view('header');
+        $this->load->view('adduser'); // เข้ามาครั้งแรกให้โหลด register_view มาแสดง
 	}
 	public function validate()
 	{
@@ -21,7 +22,7 @@ class Register extends CI_Controller {
 
 		if ($this->form_validation->run() == FALSE)
 		{
-				$this->load->view('register_view');
+				$this->load->view('adduer');
 		}else{
 			$first_name = $this->input->post('first_name');
 			$last_name = $this->input->post('last_name');
