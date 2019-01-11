@@ -9,6 +9,7 @@ class User extends CI_Controller{
    public function adduser(){
         $this->load->view('header');
         $this->load->view('adduser');
+        
        
    
     }
