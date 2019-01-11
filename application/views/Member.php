@@ -82,7 +82,7 @@
                           </thead>
                             <tbody>
                             <?php
-                            $rs=0;
+                            
                             if(count($rs)==0)
                             {
                                 echo"<tr><td coispan='7'align='center'>--no data";
@@ -100,7 +100,8 @@
                                     echo"<td>.$r[phon].</td>";
                                     echo"<td>.$r[username].</td>";
                                     echo"<td>.$r[password].</td>";
-                            
+                                    
+
                                     echo"/tr";
                                     $no++;
                                 }

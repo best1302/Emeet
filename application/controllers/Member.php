@@ -8,7 +8,7 @@ class Member extends CI_Controller{
     }
    public function adduser(){
         $this->load->view('header');
-        $this->load->view('adduser');
+        $this->load->view("adduser".$data);
        $sql="Select*user order by uid asc";
        $rs=$this->db->query($sql);
 
