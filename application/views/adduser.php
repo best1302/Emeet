@@ -1,6 +1,6 @@
 
 <body class="fix-header card-no-border logo-center">
-    <?php echo form_open('register/validate'); ?>
+    
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -68,7 +68,7 @@
                             <div class="card-body text3">
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
-                            <?php echo form_open('');?>
+                            
                             <form >
                             <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">ID :</label>
@@ -130,6 +130,8 @@
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
                                     </form>
+
+                            <>
                         </div>
                     </div>
                 </div>
