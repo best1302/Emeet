@@ -128,14 +128,8 @@
                                 <div>
                                         <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
-                                        </div> 
+                                </div> 
                                     </form>
-                                    <?php echo from_close('')>
-                                    </div> 
-                            </div>
-                        </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
