@@ -69,69 +69,76 @@
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
                             
-                            <form >
+                            <form method="post">
                             <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">ID :</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control">
+                                        <input type="number" name="number" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Firstname :</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="firstname"class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Lastname :</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="lastname" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">E-mail :</label>
                                     <div class="col-sm-6">
-                                        <input type="email" class="form-control">
+                                        <input type="email" name="email" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Phone :</label>
+                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">mobile :</label>
                                     <div class="col-sm-6">
-                                        <input type="tel" class="form-control">
+                                        <input type="tel"  name="mobile" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                         <label class="col-sm-3 text-right control-label col-form-label">Photo upload</label>
                                         <div class="col-sm-6 fileinput fileinput-new input-group" data-provides="fileinput">
-                                            <div class="form-control" data-trigger="fileinput"> <i class="glyphicon glyphicon-file fileinput-exists"></i> <span class="fileinput-filename"></span></div> <span class="input-group-addon btn btn-default btn-file"> <span class="fileinput-new">Select file</span> <span class="fileinput-exists">Change</span>
+                                            <div class="form-control" data-trigger="fileinput"> 
+                                            <i class="glyphicon glyphicon-file fileinput-exists">
+                                            </i> <span class="fileinput-filename">
+                                            </span></div> <span class="input-group-addon btn btn-default btn-file">
+                                             <span class="fileinput-new">Select file</span> <span class="fileinput-exists">Change</span>
                                             <input type="hidden">
-                                            <input type="file" name="..."> </span> <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
+                                            <input type="file" name="..."> 
+                                            </span> <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
                                     </div>
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Username :</label>
                                     <div class="col-sm-6">
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="username" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Password :</label>
                                     <div class="col-sm-6">
-                                        <input type="password" class="form-control">
+                                        <input type="password"  name="password" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Confirm Password :</label>
                                     <div class="col-sm-6">
-                                        <input type="password" class="form-control">
+                                        <input type="password" name="confirmpassword" class="form-control">
                                     </div>
                                 </div>
+                                <center>
                                 <div>
-                                        <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
+                                        <button type="submit" name="save" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
+                                </center>
                                     </form>
 
-                            <>
+                          
                         </div>
                     </div>
                 </div>
