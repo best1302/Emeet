@@ -8,11 +8,8 @@ class Member extends CI_Controller{
     }
    public function adduser(){
         $this->load->view('header');
-        $this->load->view("adduser".$data);
-       $sql="Select*user order by uid asc";
-       $rs=$this->db->query($sql);
-
-       $data['rs']=$rs->result_array();
+        $this->load->view("adduser");
+      
    
     }
     public function updateuser(){
@@ -26,7 +23,10 @@ class Member extends CI_Controller{
     public function showeuser(){
       $this->load->view('header');
       $this->load->view('Member');
-        
+      $sql="Select*from user order by uid asc";
+      $rs=$this->db->query($sql);
+
+      $data['rs']=$rs->result_array();
     
       }
      
