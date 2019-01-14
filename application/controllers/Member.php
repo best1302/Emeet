@@ -21,6 +21,13 @@ class Member extends CI_Controller{
      
       }
     public function showeuser(){
+      $query = $this->db->query("Select * from user order by uid asc");
+      $users = $query->result();
+      // foreach ($query->result() as $row)
+      // {
+      //         print_r($row->firstname);
+      // }
+
       $this->load->view('header');
       $this->load->view('Member');
       $sql="Select*from user order by uid asc";
