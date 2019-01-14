@@ -1,4 +1,3 @@
-<
 <body class="fix-header card-no-border logo-center">
     
     <!-- ============================================================== -->
@@ -73,46 +72,24 @@
                           <tr>
                           <th>ลำดับ</th>
                           <th>Firstname</th>
-                          <th>Lastname</th>
+                          <!-- <th>Lastname</th>
                           <th>E-mail</th>
                           <th>Phone</th>
                           <th>Username</th>
-                          <th>Password</th>
+                          <th>Password</th> -->
                           </tr>
                           </thead>
                             <tbody>
-                            <?php
-                            
-                            if(count($rs)==0)
-                            {
-                                echo"<tr><td coispan='7'align='center'>--no data";
-                            }
-                            else
-                            {
-                                $no=1;
-                                foreach($rs as $r)
-                                {
-                                    echo"<tr>";
-                                    echo"<td align>='center'>$no</td>";
-                                    echo"<td>.$r[firstname].</td>";
-                                    echo"<td>.$r[lastname].</td>";
-                                    echo"<td>.$r[email].</td>";
-                                    echo"<td>.$r[phon].</td>";
-                                    echo"<td>.$r[username].</td>";
-                                    echo"<td>.$r[password].</td>";
-                                    
-
-                                    echo"/tr";
-                                    $no++;
-                                }
-                                
-                            }
-                            
-                            ?>
+                                <?php foreach($users as $row){?>
+                                <tr>
+                                    <td></td>
+                                    <td><?php echo $row->firstname ?></td>
+                                </tr>
+                                <?php }?>
                             </tbody>
 
                           
                         </div>
                     </div>
                 </div>
-            </div>>
+            </div>
