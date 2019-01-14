@@ -21,11 +21,11 @@ class Member extends CI_Controller{
         $pi=$this->input->post('pic');
         $u=$this->input->post('username');
         $p=$this->input->post('password');
-        $c=$this->input->post('confirmpassword');
+        $pe=$this->input->post('preficname');
 
         
         //call saverecords method of Hello_Model and pass variables as parameter
-        $this->Member_model ->addmember($i,$f,$l,$e,$m,$pi,$u,$p,$c); 
+        $this->Member_model ->addmember($i,$f,$l,$e,$m,$pi,$u,$p,$pe); 
         echo "Records Saved Successfully";
         }
               

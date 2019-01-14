@@ -125,14 +125,14 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Confirm Password :</label>
+                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">preficname :</label>
                                     <div class="col-sm-6">
-                                        <input type="password" name="confirmpassword" class="form-control">
+                                        <input type="text" name="preficname" class="form-control">
                                     </div>
                                 </div>
                                 <center>
                                 <div>
-                                        <button type="submit" name="save" value="Save Data" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
+                                        <button type="submit" name="save"  class="btn btn-success waves-effect waves-light m-r-10">Save</button>
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
                                 </center>
