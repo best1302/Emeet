@@ -132,7 +132,7 @@
                                 </div>
                                 <center>
                                 <div>
-                                        <button type="submit" name="save" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
+                                        <button type="submit" name="save" value="Save Data" class="btn btn-success waves-effect waves-light m-r-10">Save</button>
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
                                 </center>

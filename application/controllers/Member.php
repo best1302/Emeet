@@ -8,6 +8,7 @@ class Member extends CI_Controller{
     $this->load->view('header');
     $this->load->view("adduser");
     $this->load->model('Member_model');
+    $this->load->database();
         //check submit bottn
         if($this->input->post('save'))
             {
@@ -24,7 +25,7 @@ class Member extends CI_Controller{
 
         
         //call saverecords method of Hello_Model and pass variables as parameter
-        $this->Member_model ->saverecords($i,$f,$l,$e,$m,$pi,$u,$p,$c); 
+        $this->Member_model ->addmember($i,$f,$l,$e,$m,$pi,$u,$p,$c); 
         echo "Records Saved Successfully";
         }
               
