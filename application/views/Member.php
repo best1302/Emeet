@@ -83,7 +83,7 @@
                                 <?php foreach($users as $row){?>
                                 <tr>
                                     <td></td>
-                                    
+                                    <td><?php echo $row->uid ?></td>
                                     <td><?php echo $row->firstname ?></td>
                                     <td><?php echo $row->lastname ?></td>
                                     <td><?php echo $row->email ?></td>
