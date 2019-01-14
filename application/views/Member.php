@@ -93,8 +93,6 @@
                                 </tr>
                                 <?php }?>
                             </tbody>
-
-                          
                         </div>
                     </div>
                 </div>
