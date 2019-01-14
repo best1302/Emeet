@@ -67,16 +67,16 @@
                             <div class="card-body text3">
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">รายชื่อบุคคลากร</h2></center>
-                          <table border="1">
+                          <table class="table color-table info-table">
                           <thead>
                           <tr>
                           <th>ลำดับ</th>
                           <th>Firstname</th>
-                          <!-- <th>Lastname</th>
+                          <th>Lastname</th>
                           <th>E-mail</th>
                           <th>Phone</th>
                           <th>Username</th>
-                          <th>Password</th> -->
+                          <th>Password</th> 
                           </tr>
                           </thead>
                             <tbody>
@@ -84,6 +84,11 @@
                                 <tr>
                                     <td></td>
                                     <td><?php echo $row->firstname ?></td>
+                                    <td><?php echo $row->lastname ?></td>
+                                    <td><?php echo $row->email ?></td>
+                                    <td><?php echo $row->phone ?></td>
+                                    <td><?php echo $row->username ?></td>
+                                    <td><?php echo $row->password?></td>
                                 </tr>
                                 <?php }?>
                             </tbody>
