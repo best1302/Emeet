@@ -4,41 +4,6 @@ class Member extends CI_Controller{
         parent::__construct();
 
     }
-   public function adduser(){
-    $this->load->view('header');
-    $this->load->view("adduser");
-    $this->load->model('Member_model');
-    $this->load->database();
-        //check submit bottn
-        if($this->input->post('save'))
-            {
-        //get form's data and store in local varable
-        $i=$this->input->post('number');
-        $f=$this->input->post('firstname');
-        $l=$this->input->post('lastname');
-        $e=$this->input->post('email');
-        $m=$this->input->post('mobile');
-        $pi=$this->input->post('pic');
-        $u=$this->input->post('username');
-        $p=$this->input->post('password');
-        $pe=$this->input->post('preficname');
-
-        
-        //call saverecords method of Hello_Model and pass variables as parameter
-        $this->Member_model ->addmember($i,$f,$l,$e,$m,$pi,$u,$p,$pe); 
-        echo "Records Saved Successfully";
-        }
-              
-   
-    }
-    public function updateuser(){
-      echo "อัปเดชผู้ใช้";
-   
-    }
-   public function deleteuser(){
-        echo "ลบผู้ใช้";
-     
-      }
     public function showeuser(){
       $query = $this->db->query("Select * from user order by uid asc");
       $users = $query->result();
@@ -48,5 +13,43 @@ class Member extends CI_Controller{
         
     
       }
+    
+   public function adduser(){
+    $uid=$this->input->post('uid');
+        $username=$this->input->post('username');
+       $password=$this->input->post('password');
+       $firstname=$this->input->post('firstname');
+       $lastname=$this->input->post('lastname');
+       $picture=$this->input->post('picture');
+      $email=$this->input->post('email');
+        $phone=$this->input->post('mobile');
+        $prefic_name=$this->input->post('preficname');
+
+        $data = array(
+          'uid' => $uid,
+          'username' => $username,
+          'password' => $password,
+          'firstname' => $firstname,
+          'lastname' => $lastname,
+          //'picture' => '',
+          'email' => $email,
+          'phone' => $phone,
+          'prefic_name' => $prefic_name         
+  );
+  $this->db->insert('user', $data);
+  //print_r($data);
+   
+
+
+    }
+    public function updateuser(){
+      echo "อัพเดชผู้ใช้";
+      
+    }
+   public function deleteuser(){
+        echo "ลบผู้ใช้";
+     
+      }
+   
      
 }
