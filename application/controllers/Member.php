@@ -4,28 +4,29 @@ class Member extends CI_Controller{
         parent::__construct();
 
     }
-    public function showeuser(){
-      $query = $this->db->query("Select * from user order by uid asc");
-      $users = $query->result();
+    public function showeuser(){  
      
-      $this->load->view('header');
-      $this->load->view('Member',['users'=>$users]);
+      $this->load->view('header');  
+      $this->load->view('adduser');  
+      //เรียกหน้ามาแสดง  
+
+      
         
     
       }
     
    public function adduser(){
-    $uid=$this->input->post('uid');
+         $uid=$this->input->post('uid');
         $username=$this->input->post('username');
-       $password=$this->input->post('password');
-       $firstname=$this->input->post('firstname');
-       $lastname=$this->input->post('lastname');
-       $picture=$this->input->post('picture');
-      $email=$this->input->post('email');
+        $password=$this->input->post('password');
+        $firstname=$this->input->post('firstname');
+        $lastname=$this->input->post('lastname');
+        $picture=$this->input->post('picture');
+        $email=$this->input->post('email');
         $phone=$this->input->post('mobile');
         $prefic_name=$this->input->post('preficname');
 
-        $data = array(
+        $data = array(     
           'uid' => $uid,
           'username' => $username,
           'password' => $password,
@@ -36,10 +37,11 @@ class Member extends CI_Controller{
           'phone' => $phone,
           'prefic_name' => $prefic_name         
   );
-  $this->db->insert('user', $data);
-  //print_r($data);
-   
-
+  $this->db->insert('user', $data);  //เลือกinsert ลงในตาราง User 
+  $query = $this->db->query("Select * from user order by uid asc"); //select db มาแสดง 
+  $users = $query->result();        
+  $this->load->view('header');  
+  $this->load->view('Member',['users'=>$users]);
 
     }
     public function updateuser(){
