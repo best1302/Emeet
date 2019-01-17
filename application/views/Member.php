@@ -92,7 +92,7 @@
                             </tbody>
                         </div>
                         <div class="button-box m-t-20">
-                                <a class="btn btn-success" href="/member/adduser">เพิ่มบุคลากร</a>
+                                <a class="btn btn-success" href="adduser">เพิ่มบุคลากร</a>
                         </div>
                     </div>
                 </div>
