@@ -4,18 +4,15 @@ class Member extends CI_Controller{
         parent::__construct();
 
     }
-    public function showeuser(){  
+    public function adduser(){  
      
       $this->load->view('header');  
       $this->load->view('adduser');  
       //เรียกหน้ามาแสดง  
-
-      
         
-    
       }
     
-   public function adduser(){
+   public function showeuser(){
          $uid=$this->input->post('uid');
         $username=$this->input->post('username');
         $password=$this->input->post('password');

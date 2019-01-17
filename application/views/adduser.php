@@ -68,7 +68,7 @@
                             <div class="card-body text3">
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
-                            <form  id="forml" name="forml" method="post" action="adduser">
+                            <form  id="forml" name="forml" method="post" action="showeuser">
                             <div class="form-group row">
                                     <label foir="inputEmail3" class="col-sm-3 text-right control-label col-form-label">ID :</label>
                                     <div class="col-sm-6">
