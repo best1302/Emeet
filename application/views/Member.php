@@ -38,8 +38,6 @@
                                                 </center>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="card-body inbox-panel">
                                         <div class="buttom">
                                             <div class="btn btn-block btn-success" data-toggle="dropdown" aria-haspopup="true"
                                                 aria-expanded="false"> <span class="text2">จัดการการประชุม</span>
@@ -63,7 +61,7 @@
                         </div>
                     </div>
                     <div class="col-md-9">
-                    <div class="card">
+                    <div class="card ">
                             <div class="card-body text3">
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">รายชื่อบุคคลากร</h2></center>
@@ -93,6 +91,10 @@
                                 <?php }?>
                             </tbody>
                         </div>
+                        <div class="button-box m-t-20">
+                                <a class="btn btn-success" href="/member/adduser">เพิ่มบุคลากร</a>
+                        </div>
                     </div>
                 </div>
             </div>
+            
