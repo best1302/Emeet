@@ -13,7 +13,7 @@ class Member extends CI_Controller{
       }
     
    public function showeuser(){
-         $uid=$this->input->post('uid');
+        $uid=$this->input->post('uid');
         $username=$this->input->post('username');
         $password=$this->input->post('password');
         $firstname=$this->input->post('firstname');
