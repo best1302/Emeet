@@ -61,13 +61,5 @@
       }  
  }  
 
-<<<<<<< HEAD
-    function login1(){
-        $this->load->view('login');
-        
-    }
-}
+   
 
-
-=======
->>>>>>> 254b7ab65ef61f3d3031b17d9e47988ac2f7bd57
