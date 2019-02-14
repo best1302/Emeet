@@ -76,18 +76,18 @@
                                             <input type="text" name="heading_name" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="form-group row"> 
                                             <label for="example-search-input" class="col-2 col-form-label text3">หน่วยงาน</label>
                                             <div class="col-10 ">
-                                                <input type="checkbox" id="md_checkbox_8" name="department[]" class="chk-col-cyan" checked value="ปริญญาตรี" />
+                                                <input type="checkbox" id="md_checkbox_8"  name="department1"  class="chk-col-cyan"  checked  value="ปริญญาตรี" />
                                                 <label for="md_checkbox_8">
                                                     <p class="text2">ปริญญาตรี</p>
                                                 </label>
-                                                <input type="checkbox" id="md_checkbox_9" name="department[]" class="chk-col-cyan" checked  value="ปริญญาโท" />
+                                                <input type="checkbox" id="md_checkbox_9" name="department2" class="chk-col-cyan" checked  value="ปริญญาโท" />
                                                 <label for="md_checkbox_9">
                                                     <p class="text2">ปริญญาโท</p>
                                                 </label>
-                                                <input type="checkbox" id="md_checkbox_10" name="department[]" class="chk-col-cyan" checked value="" />
+                                                <input type="checkbox" id="md_checkbox_10" name="department3" class="chk-col-cyan" checked value="ทั้งหมด" />
                                                 <label for="md_checkbox_10">
                                                     <p class="text2">All</p>
                                                 </label>

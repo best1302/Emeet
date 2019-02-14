@@ -17,12 +17,17 @@ public function __construct(){
      public function showeroom(){
         echo "ok";
         $heading_name=$this->input->post('heading_name');
-        $department=$this->input->post('department');
         $date=$this->input->post('date');
         $time=$this->input->post('time');
+
+        $department=$this->input->post('department1'); 
+        $department=$this->input->post('department2'); 
+        $department=$this->input->post('department3'); 
         $data = array(     
             'heading_name' => $heading_name,
-            'department' => $department,
+            'department' => $department1,
+            'department' => $department2,
+            'department' => $department3,
             'date' => $date,
             'time' => $time,
         
