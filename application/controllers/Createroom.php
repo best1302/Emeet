@@ -10,30 +10,27 @@ public function __construct(){
         $this->load->view('header');
         $this->load->view('convene');
 
-        $uid=$this->input->post('uid');
-        $username=$this->input->post('username');
-        $password=$this->input->post('password');
-        $firstname=$this->input->post('firstname');
-        $lastname=$this->input->post('lastname');
-        $picture=$this->input->post('picture');
-        $email=$this->input->post('email');
-        $phone=$this->input->post('mobile');
-        $prefic_name=$this->input->post('preficname');
+        $heading_name=$this->input->post('heading_name');
+        $department = $this->input->post('department'); 
+        $Date=$this->input->post('Date');
+        $time=$this->input->post('time');
+       
   
         $data = array(     
-          'uid' => $uid,
-          'username' => $username,
-          'password' => $password,
-          'firstname' => $firstname,
-          'lastname' => $lastname,
-          //'picture' => '',
-          'email' => $email,
-          'phone' => $phone,
-          'prefic_name' => $prefic_name     
+          'heading_name' => $heading_name,
+          'department' => $department,
+          'Date' => $Date,
+          'time' => $time,
+          
   );
-  $this->db->insert('user', $data);  //เลือกinsert ลงในตาราง User 
+  $this->db->insert('heading', $data);  //เลือกinsert ลงในตาราง User 
      
 
      }
+
+     public function showe1(){
+        
+        
+      }
 }
 

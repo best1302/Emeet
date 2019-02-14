@@ -69,7 +69,7 @@
                                     <center>
                                         <h2 class="fontsize">สร้างรายงานการประชุม</h2>
                                     </center>
-                                    <form class="form">
+                                    <form  id="forml" name="forml" method="post" action="convene">
                                         <div class="form-group m-t-40 row">
                                             <label for="example-text-input" class="col-2 col-form-label text3">ชื่อการประชุม</label>
                                             <div class="col-10">
@@ -79,15 +79,15 @@
                                         <div class="form-group row">
                                             <label for="example-search-input" class="col-2 col-form-label text3">หน่วยงาน</label>
                                             <div class="col-10 ">
-                                                <input type="checkbox" id="md_checkbox_8" class="chk-col-cyan" checked />
+                                                <input type="checkbox" id="md_checkbox_8" name="department[]" class="chk-col-cyan" checked value="ปริญญาตรี" />
                                                 <label for="md_checkbox_8">
                                                     <p class="text2">ปริญญาตรี</p>
                                                 </label>
-                                                <input type="checkbox" id="md_checkbox_9" class="chk-col-cyan" checked />
+                                                <input type="checkbox" id="md_checkbox_9" name="department[]" class="chk-col-cyan" checked  value="ปริญญาโท" />
                                                 <label for="md_checkbox_9">
                                                     <p class="text2">ปริญญาโท</p>
                                                 </label>
-                                                <input type="checkbox" id="md_checkbox_10" class="chk-col-cyan" checked />
+                                                <input type="checkbox" id="md_checkbox_10" name="department[]" class="chk-col-cyan" checked value="ALL" />
                                                 <label for="md_checkbox_10">
                                                     <p class="text2">All</p>
                                                 </label>
@@ -96,13 +96,13 @@
                                         <div class="form-group row">
                                             <label for="example-date-input" class="col-2 col-form-label text3">วันที่ประชุม</label>
                                             <div class="col-10">
-                                                <input class="form-control text3" type="date" value="2018-12-03" id="example-date-input">
+                                                <input class="form-control text3" type="date" name="Date" value="2018-12-03" id="example-date-input">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="example-time-input" class="col-2 col-form-label text3">เวลา</label>
                                             <div class="col-10">
-                                                <input class="form-control text3" type="time" value="13:45:00" id="example-time-input">
+                                                <input class="form-control text3" type="time" name="time" value="13:45:00" id="example-time-input">
                                             </div>
                                         </div>
                                     </form>
