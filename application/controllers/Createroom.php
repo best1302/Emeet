@@ -8,7 +8,7 @@ public function __construct(){
     public  function addroom(){
 
         $this->load->view('header');
-        $this->load->view('convene');
+        $this->load->view('addroom');
 
         $heading_name=$this->input->post('heading_name');
         $department = $this->input->post('department'); 
@@ -24,8 +24,6 @@ public function __construct(){
           
   );
   $this->db->insert('heading', $data);  //เลือกinsert ลงในตาราง User 
-     
-
      }
 
      public function showe1(){
