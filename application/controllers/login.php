@@ -6,8 +6,10 @@ class login extends CI_Controller{
         parent::__construct();
     }
 
-    function login(){
+    function login1(){
         $this->load->view('login');
         
     }
 }
+
+
