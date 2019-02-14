@@ -4,10 +4,10 @@ session_start();
 				//connection
                   include("connDB.php");
 				//รับค่า user & password
-                  $Username = $_POST['username'];
-                  $Password = md5($_POST['password']);
+                  $Username = $_POST['Username'];
+                  $Password = md5($_POST['Password']);
 				//query 
-                  $sql="SELECT * FROM user Where Username='".$username."' and Password='".$password."' ";
+                  $sql="SELECT * FROM user Where Username='".$Username."' and Password='".$Password."' ";
 
                   $result = mysqli_query($con,$sql);
 				
