@@ -1,11 +1,11 @@
 <?php 
 session_start();
-        if(isset($_POST['Username'])){
+        if(isset($_POST['username'])){
 				//connection
-                  include("connection.php");
+                  include("connDB.php");
 				//รับค่า user & password
-                  $Username = $_POST['Username'];
-                  $Password = md5($_POST['Password']);
+                  $Username = $_POST['username'];
+                  $Password = md5($_POST['password']);
 				//query 
                   $sql="SELECT * FROM user Where Username='".$username."' and Password='".$password."' ";
 
@@ -15,8 +15,8 @@ session_start();
 
                       $row = mysqli_fetch_array($result);
 
-                      $_SESSION["UserID"] = $row["ID"];
-                      $_SESSION["User"] = $row["Firstname"]." ".$row["Lastname"];
+                      $_SESSION["UserID"] = $row["uid"];
+                      $_SESSION["User"] = $row["firstname"]." ".$row["lastname"];
                       $_SESSION["create_meeting"] = $row["create_meeting"];
 
                       if($_SESSION["create_meeting"]=="Y"){ //ถ้าเป็น admin ให้กระโดดไปหน้า admin_page.php
