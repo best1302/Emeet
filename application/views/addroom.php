@@ -67,13 +67,13 @@
                             <div class="card-body">
                                 <div>
                                     <center>
-                                        <h2 class="fontsize">สร้างรายงานการประชุม</h2>
+                                        <h2 class="fontsize">สร้างรางานการประชุม</h2>
                                     </center>
-                                    <form  id="forml" name="forml" method="post" action="addroom">
+                                    <form  id="forml" name="forml" method="post" action="showeroom">
                                         <div class="form-group m-t-40 row">
                                             <label for="example-text-input" class="col-2 col-form-label text3">ชื่อการประชุม</label>
                                             <div class="col-10">
-                                                <input class="form-control" type="text" name="heading_name" id="example-text-input">
+                                            <input type="text" name="heading_name" class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -87,7 +87,7 @@
                                                 <label for="md_checkbox_9">
                                                     <p class="text2">ปริญญาโท</p>
                                                 </label>
-                                                <input type="checkbox" id="md_checkbox_10" name="department[]" class="chk-col-cyan" checked value="ALL" />
+                                                <input type="checkbox" id="md_checkbox_10" name="department[]" class="chk-col-cyan" checked value="" />
                                                 <label for="md_checkbox_10">
                                                     <p class="text2">All</p>
                                                 </label>
@@ -96,26 +96,29 @@
                                         <div class="form-group row">
                                             <label for="example-date-input" class="col-2 col-form-label text3">วันที่ประชุม</label>
                                             <div class="col-10">
-                                                <input class="form-control text3" type="date" name="Date" value="2018-12-03" id="example-date-input">
+                                            <input type="date" name="date" class="form-control">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="example-time-input" class="col-2 col-form-label text3">เวลา</label>
                                             <div class="col-10">
-                                                <input class="form-control text3" type="time" name="time" value="13:45:00" id="example-time-input">
+                                            <input type="time" name="time" class="form-control">
                                             </div>
                                         </div>
+                                        <div class="card-body zero3">
+
+                                
+                                <div>
+                                        
+                                <button type="submit" class="btn btn-success">Save</button>
+                                <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
+                                </div>
+                                </div>
                                     </form>
                                 </div>
                       </div>
                
-                            <div class="card-body zero3">
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-info waves-effect"
-                                        data-dismiss="modal"><i class="fa fa-save"></i> Save</button>
-                                    <button type="button" class="btn btn-default waves-effect"
-                                        data-dismiss="modal">Cancel</button>
-                                </div>
+                           
                             </div>
                         </div>
                     </div>
