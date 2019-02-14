@@ -5,9 +5,9 @@
       function login()  
       {  
            //http://localhost/tutorial/codeigniter/main/login  
-           $data['title'] = 'CodeIgniter Simple Login Form With Sessions';  
-           $this->load->view("login", $data);  
-      }  
+             
+           $this->load->view("login");  
+      }
       function login_validation()  
       {  
            $this->load->library('form_validation');  
