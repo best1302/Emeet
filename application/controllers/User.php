@@ -1,7 +1,7 @@
 <?php
 class User extends CI_Contrller
 {
-    public function login()
+    function login()
     {
         echo "login";
     }
