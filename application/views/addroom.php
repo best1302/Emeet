@@ -69,7 +69,7 @@
                                     <center>
                                         <h2 class="fontsize">สร้างรายงานการประชุม</h2>
                                     </center>
-                                    <form  id="forml" name="forml" method="post" action="convene">
+                                    <form  id="forml" name="forml" method="post" action="addroom">
                                         <div class="form-group m-t-40 row">
                                             <label for="example-text-input" class="col-2 col-form-label text3">ชื่อการประชุม</label>
                                             <div class="col-10">
