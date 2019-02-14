@@ -68,7 +68,7 @@
                             <div class="card-body text3">
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
-                            <form  id="forml" name="forml" method="post" action="showeuser">
+                            <form  id="forml" name="forml" method="post" action="adduser">
                             <div class="form-group row">
                                     <label foir="inputEmail3" class="col-sm-3 text-right control-label col-form-label">ID :</label>
                                     <div class="col-sm-6">
@@ -108,7 +108,7 @@
                                             </span></div> <span class="input-group-addon btn btn-default btn-file">
                                              <span class="fileinput-new">Select file</span> <span class="fileinput-exists">Change</span>
                                             <input type="hidden">
-                                            <input type="file" name="..."> 
+                                            <input type="file" name="file"> 
                                             </span> <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
                                     </div>
                                 <div class="form-group row">
@@ -131,7 +131,8 @@
                                 </div>
                                 <center>
                                 <div>
-                                        <button type="submit" name="save"  class="btn btn-success waves-effect waves-light m-r-10">Save</button>
+                                        
+                                        <a class="btn btn-success" href="showeuser">Save</a></button>
                                         <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
                                 </center>
