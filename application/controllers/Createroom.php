@@ -1,7 +1,6 @@
 <?php
-
 class Createroom extends CI_Controller{
-public function __construct(){
+    public  function __construct(){
         parent::__construct();
         
     }
@@ -19,15 +18,11 @@ public function __construct(){
         $heading_name=$this->input->post('heading_name');
         $date=$this->input->post('date');
         $time=$this->input->post('time');
-
-        $department=$this->input->post('department1'); 
-        $department=$this->input->post('department2'); 
-        $department=$this->input->post('department3'); 
+        $department=implode(",", $this->input->post('departmen'));
+        $this->input->post('department3'); 
         $data = array(     
             'heading_name' => $heading_name,
-            'department' => $department1,
-            'department' => $department2,
-            'department' => $department3,
+            'department' => $department,
             'date' => $date,
             'time' => $time,
         

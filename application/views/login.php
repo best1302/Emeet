@@ -45,7 +45,7 @@
 
 
 
-      <form action="index.php/home" class="form-horizontal form-material ttop" id="loginform" >
+      <form action="/Emeet/index.php/home" method="post" class="form-horizontal form-material ttop" id="loginform" >
       
         <a href="javascript:void(0)" class="text-center db"><img src="/Emeet/assets/img/logo_custom1.gif" alt="Home" /><br/></a> 
         <div class="form-group m-t-40">
