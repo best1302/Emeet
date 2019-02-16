@@ -52,3 +52,5 @@ $this->db->insert('user', $data);  //เลือกinsert ลงในตาร
    
      
 }
+
+

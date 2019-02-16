@@ -132,8 +132,8 @@
                                 <center>
                                 <div>
                                         
-                                <button><a class="btn btn-success" href="showeuser">Save</a></button>
-                                        <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
+                                <button class="btn btn-outline-success" ><a href="showeuser">Save</a></button>
+                                <button type="submit" class="btn btn-outline-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
                                 </center>
                                     </form>
