@@ -28,7 +28,7 @@ class Createroom extends CI_Controller{
         
                  
     );
-    $this->db->insert('heading', $data);  //เลือกinsert ลงในตาราง User 
+    $this->db->insert('heading', $data);  //เลือกinsert ลงในตาราง heading
         
       }
 }

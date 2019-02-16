@@ -33,7 +33,7 @@ class Member extends CI_Controller{
 $this->db->insert('user', $data);  //เลือกinsert ลงในตาราง User 
    
       }
-    
+
    public function showeuser(){    
     $query = $this->db->query("Select * from user order by uid asc"); //select db มาแสดง 
     $users = $query->result(); 

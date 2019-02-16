@@ -73,8 +73,7 @@
                           <th>Lastname</th>
                           <th>E-mail</th>
                           <th>Phone</th>
-                          <th>Username</th>
-                          <th>Password</th> 
+                         
                           </tr>
                           </thead>
                             <tbody>
@@ -85,8 +84,6 @@
                                     <td><?php echo $row->lastname ?></td>
                                     <td><?php echo $row->email ?></td>
                                     <td><?php echo $row->phone ?></td>
-                                    <td><?php echo $row->username ?></td>
-                                    <td><?php echo $row->password?></td>
                                 </tr>
                                 <?php }?>
                             </tbody>

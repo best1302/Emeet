@@ -68,13 +68,9 @@
                             <div class="card-body text3">
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
+
                             <form  id="forml" name="forml" method="post" action="adduser">
-                            <div class="form-group row">
-                                    <label foir="inputEmail3" class="col-sm-3 text-right control-label col-form-label">ID :</label>
-                                    <div class="col-sm-6">
-                                        <input type="number" name="uid" class="form-control">
-                                    </div>
-                                </div>
+                            
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Username :</label>
                                     <div class="col-sm-6">
@@ -131,14 +127,15 @@
                                 </div>
                                 <center>
                                 <div>
-                                        
-                                <button class="btn btn-outline-success" ><a href="showeuser">Save</a></button>
-                                <button type="submit" class="btn btn-outline-inverse waves-effect waves-light">Cancel</button>
+                                <button type="submit" class="btn btn-success">Save</button>
+                                <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
                                 </center>
                                     </form>
 
-                          
+                                    <div class="button-box m-t-20">
+                                <a class="btn btn-success" href="showeuser">รายชื่อบุคลากร</a>
+                        </div>
                         </div>
                     </div>
                 </div>
