@@ -1,20 +1,12 @@
 <?php
-class auth extends CI_Controller{
+class model_userLog extends CI_Model{
 
-function __construct(){
-  parent::__construct();
-  $this->load->model('model_userLog');
-}
-
-  function login()
-  {
-    if(isset($_POST['submit'])){
-      $username = $this->input->post('username');
-      $password = $this->input->post('password');
-      $berhasil = $this->model_userLog->login($username,$password);
-      echo $berhasil;
-    }else{
-        $this->load->view('form_login');
-    }
+function login($username,$password){
+  $periksa = $this->db->get_where('user',array('username'=>$username,'password'=> md5($password)));
+  if($periksa->num_rows()>0){
+    return 1;
+  }else{
+    return 0;
   }
+}
 }
