@@ -69,7 +69,7 @@
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
 
-                            <form  id="forml" name="forml" method="post" action="adduser">
+                            <form  id="forml" name="forml" method="post" action="insertUser">
                             
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Username :</label>
@@ -80,7 +80,7 @@
                                 <div class="form-group row">
                                     <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Password :</label>
                                     <div class="col-sm-6">
-                                        <input type="text" name="password" class="form-control">
+                                        <input type="password" name="password" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -133,9 +133,9 @@
                                 </center>
                                     </form>
 
-                                    <div class="button-box m-t-20">
+                                    <!-- <div class="button-box m-t-20">
                                 <a class="btn btn-success" href="showeuser">รายชื่อบุคลากร</a>
-                        </div>
+                        </div> -->
                         </div>
                     </div>
                 </div>

@@ -77,9 +77,10 @@
                           </tr>
                           </thead>
                             <tbody>
+                            <?php $i =1 ?>
                                 <?php foreach($users as $row){?>
                                 <tr>
-                                    <td><?php echo $row->uid ?></td>
+                                    <td><?php echo $i++; ?></td>
                                     <td><?php echo $row->firstname ?></td>
                                     <td><?php echo $row->lastname ?></td>
                                     <td><?php echo $row->email ?></td>

@@ -44,8 +44,10 @@
   <div class="login-box card">
     <div class="card-body">
 
-
-
+      <?php if(isset($message)){ ?>
+      <h1>dddddd</h1>
+      <?php }?>
+      
       <form action="/Emeet/index.php/login/showelogin" method="post" class="form-horizontal form-material ttop" id="loginform" >
       
         <a href="javascript:void(0)" class="text-center db"><img src="/Emeet/assets/img/logo_custom1.gif" alt="Home" /><br/></a> 

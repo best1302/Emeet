@@ -19,11 +19,27 @@ class login extends CI_Controller{
              ";
 		$query = $this->db->query($query);
 		if($query->num_rows()>0){
+            $this->load->library('session');
+            $user = $query->row();
+            $data = [
+                'name' => $user->firstname,
+                'surname' => $user->lastname,
+                'email' => $user->email,
+                'phone' => $user->phone,
+                'prefix' => $user->prefic_name
+
+            ];
+
+            $this->session->set_userdata('user',$data);
+            $user = $this->session->userdata('user');
             $this->load->view('header');
-            $this->load->view('calendar');
+            $this->load->view('calendar',$user);
 		}
 		else{
-            $this->load->view('login');
+            $data = [
+                'message' => true
+            ];
+            $this->load->view('login',$data);
 		}
 	}
 

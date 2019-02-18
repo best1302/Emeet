@@ -9,6 +9,10 @@ class Member extends CI_Controller{
       $this->load->view('header');  
       $this->load->view('adduser');  
       //เรียกหน้ามาแสดง  
+
+    }
+    public function insertUser(){
+
       $uid=$this->input->post('uid');
       $username=$this->input->post('username');
       $password=$this->input->post('password');
@@ -29,10 +33,13 @@ class Member extends CI_Controller{
         'email' => $email,
         'phone' => $phone,
         'prefic_name' => $prefic_name     
-);
-$this->db->insert('user', $data);  //เลือกinsert ลงในตาราง User 
-   
-      }
+      );
+        $this->db->insert('user', $data);  //เลือกinsert ลงในตาราง User  
+        $query = $this->db->query("Select * from user order by uid asc"); //select db มาแสดง 
+        $users = $query->result(); 
+        $this->load->helper('url');
+        return redirect('member/showeuser');
+    }
 
    public function showeuser(){    
     $query = $this->db->query("Select * from user order by uid asc"); //select db มาแสดง 

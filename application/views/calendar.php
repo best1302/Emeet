@@ -59,10 +59,11 @@
                                         <div id="calendar-events" class="m-t-20">
                                             <div class="text2">
                                                 <center>
-                                                    <span>อ.ดร.พาสน์ ปราโมกข์ชน</span><br>
-                                                    <span>Part Pramokchon</span><br>
-                                                    <p>053-873890-93 ต่อ 16 <br>
-                                                        part@mju.ac.th </p>
+                                                
+                                                    <span><?php echo $prefix . ' '.$name . ' ' . $surname; ?> </span><br>
+                                                    <span><?php echo $prefix . ' '.$name . ' ' . $surname; ?></span><br>
+                                                    <p><?php echo $phone; ?> <br>
+                                                    <?php echo $email ?> </p>
                                                 </center>
                                             </div>
                                         </div>
