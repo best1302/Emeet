@@ -73,7 +73,7 @@
                                                 aria-expanded="false"> <span class="text2">จัดการการประชุม</span>
                                                 <div class="btn-group">
                                                     <div class="dropdown-menu animated flipInX">
-                                                        <a class="dropdown-item" href="#"><span class="text2">สร้างการประชุม</span></a>
+                                                        <a class="dropdown-item" href="Emeet/index.php/Createroom/addroom"><span class="text2">สร้างการประชุม</span></a>
                                                         <a class="dropdown-item" href="#"><span class="text2">รายการการประชุม</span></a>
                                                     </div>
                                                 </div>

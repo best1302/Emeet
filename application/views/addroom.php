@@ -119,7 +119,9 @@
                           </tr>
                           </thead>
                             <tbody>
-                                <?php foreach($users as $row){?>
+                            
+                                <?php 
+                                foreach($users as $row){?>
                                 <tr>
                                     <td><?php echo $row->uid ?></td>
                                     <td><?php echo $row->firstname ?></td>
@@ -130,6 +132,7 @@
                             </tbody>
                         </div>
                         </table>
+                        
                         </div>
                                 <button type="submit" class="btn btn-success">Save</button>
                                 <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
