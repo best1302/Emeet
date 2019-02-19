@@ -105,11 +105,31 @@
                                             <input type="time" name="time" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="card-body zero3">
+                                        <div class="card-body zero2">  
+                                        <p class="fontsize2">ผู้เข้าร่วมประชุม
+                                        </div>
+                                        <table class="table color-table info-table">
+                          <thead>
+                          <tr>
+                          <th>ลำดับ</th>
+                          <th>Firstname</th>
+                          <th>Lastname</th>
+                        
+                          </tr>
+                          </thead>
+                            <tbody>
+                                <?php foreach($users as $row){?>
+                                <tr>
+                                    <td><?php echo $row->uid ?></td>
+                                    <td><?php echo $row->firstname ?></td>
+                                    <td><?php echo $row->lastname ?></td>
+                                </tr>
+                                <?php }?>
+                            </tbody>
+                        </div>
+                        </table>
 
-                                
-                                <div>
-                                        
+                            
                                 <button type="submit" class="btn btn-success">Save</button>
                                 <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div>
