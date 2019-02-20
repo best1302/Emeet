@@ -22,7 +22,7 @@ class Createroom extends CI_Controller{
         $data = array(     
             'heading_name' => $heading_name,
             'department' => $department,
-            
+             
             'date' => $date,
             'time' => $time,
     );
