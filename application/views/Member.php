@@ -89,6 +89,7 @@
                                 <?php }?>
                             </tbody>
                         </div>
+                        </table>
                         <div class="button-box m-t-20">
                                 <a class="btn btn-success" href="adduser">เพิ่มบุคลากร</a>
                         </div>
