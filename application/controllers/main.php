@@ -1,16 +1,17 @@
 <?php
 
-class login extends CI_Controller{
+class Main extends CI_Controller{
 
     function __construct(){
         parent::__construct();
     }
 
-    function login1(){
+    function login(){
         $this->load->view('login');
         
     }
     function showelogin(){
+<<<<<<< HEAD:application/controllers/login.php
         global $db, $username, $errors;
         
         $username=$this->input->post('username');
@@ -61,3 +62,19 @@ class login extends CI_Controller{
 
 
 
+=======
+    $username=$this->input->post('username');
+		$password=$this->input->post('password');
+		$query ="SELECT * FROM user WHERE username='$username' AND   password='$password'";
+		$query = $this->db->query($query);
+		if($query->num_rows()>0){
+            $this->load->view('header');
+            $this->load->view('calendar');
+		}
+		else{
+            $this->load->view('login');
+		}
+	}
+
+    }
+>>>>>>> fc24b750d26fd7f84a1d31426d6316db8f95f928:application/controllers/main.php

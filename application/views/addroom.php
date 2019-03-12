@@ -79,15 +79,15 @@
                                         <div class="form-group row"> 
                                             <label for="example-search-input" class="col-2 col-form-label text3">หน่วยงาน</label>
                                             <div class="col-10 ">
-                                                <input type="checkbox" id="md_checkbox_8"  name="department1"  class="chk-col-cyan"  checked  value="ปริญญาตรี" />
+                                                <input type="checkbox" id="md_checkbox_8"  name="department[]"  class="chk-col-cyan"  checked  value="ปริญญาตรี" />
                                                 <label for="md_checkbox_8">
                                                     <p class="text2">ปริญญาตรี</p>
                                                 </label>
-                                                <input type="checkbox" id="md_checkbox_9" name="department2" class="chk-col-cyan" checked  value="ปริญญาโท" />
+                                                <input type="checkbox" id="md_checkbox_9" name="department[]" class="chk-col-cyan" checked  value="ปริญญาโท" />
                                                 <label for="md_checkbox_9">
                                                     <p class="text2">ปริญญาโท</p>
                                                 </label>
-                                                <input type="checkbox" id="md_checkbox_10" name="department3" class="chk-col-cyan" checked value="ทั้งหมด" />
+                                                <input type="checkbox" id="md_checkbox_10" name="department[]" class="chk-col-cyan" checked value="ทั้งหมด" />
                                                 <label for="md_checkbox_10">
                                                     <p class="text2">All</p>
                                                 </label>
@@ -105,22 +105,41 @@
                                             <input type="time" name="time" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="card-body zero3">
-
-                                
-                                <div>
-                                        
+                                        <div class="card-body zero2">  
+                                        <p class="fontsize2">ผู้เข้าร่วมประชุม
+                                        </div>
+                                        <table class="table color-table info-table">
+                          <thead>
+                          <tr>
+                          <th>ลำดับ</th>
+                          <th>ชื่อ</th>
+                          <th>นามสกุล</th>
+                          <th>All</th>
+                        
+                          </tr>
+                          </thead>
+                            <tbody>
+                            
+                                <?php 
+                                foreach($users as $row){?>
+                                <tr>
+                                    <td><?php echo $row->uid ?></td>
+                                    <td><?php echo $row->firstname ?></td>
+                                    <td><?php echo $row->lastname ?></td>
+                                    <td><input type="checkbox"></td>
+                                </tr>
+                                <?php }?>
+                            </tbody>
+                        </div>
+                        </table>
+                        
+                        </div>
                                 <button type="submit" class="btn btn-success">Save</button>
                                 <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div>
                                 </div>
                                     </form>
-                                </div>
-                      </div>
-               
-                           
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
+        </div>
+</body>
