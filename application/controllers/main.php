@@ -10,71 +10,43 @@ class Main extends CI_Controller{
         $this->load->view('login');
         
     }
-    function showelogin(){
-<<<<<<< HEAD:application/controllers/login.php
-        global $db, $username, $errors;
+
+    public function register(){
         
-        $username=$this->input->post('username');
-		$password=$this->input->post('password');
-		$query ="SELECT * FROM user 
-	    WHERE username='$username' 
-		AND   password='$password'
-             ";
-        $query = $this->db->query($query);
-        
-		//if($query->num_rows()>0){
-            //$this->load->view('header');
-            //$this->load->view('calendar');
-		//}
-		//else{
-            //$this->load->view('login');
-        //}
-        if (count($errors) == 0) {
-            $password = md5($password);
-    
-            $query = "SELECT * FROM user WHERE username='$username' AND password='$password' LIMIT 1";
-            $results = mysqli_query($db, $query);
-    
-            if (mysqli_num_rows($results) == 1) { // user found
-                // check if user is admin or user
-                $logged_in_user = mysqli_fetch_assoc($results);
-                if ($logged_in_user['create_meeting'] == 'Y') {
-    
-                    $_SESSION['user'] = $logged_in_user;
-                    $_SESSION['success']  = "You are now logged in";
-                    $this->load->view('header');
-                    $this->load->view('calendar');		  
-                }else{
-                    $_SESSION['user'] = $logged_in_user;
-                    $_SESSION['success']  = "You are now logged in";
-    
-                    $this->load->view('header');
-                    $this->load->view('calendar');
-                }
-            }else {
-                $this->load->view('login');
+        if (isset($_POST['register'])) {
+
+            $this->form_validation->set_rules('username', 'Username', 'required');
+            $this->form_validation->set_rules('password', 'Password', 'required');
+            $this->form_validation->set_rules('firstname', 'Firstname', 'required');
+            $this->form_validation->set_rules('lastname', 'Lastname', 'required');
+            $this->form_validation->set_rules('email', 'Email', 'required');
+            $this->form_validation->set_rules('phone', 'Phone', 'required');
+            $this->form_validation->set_rules('preficname', 'Preficname', 'required');
+       
+              if ($this->form_validation->run() == TRUE) {
+                echo 'form validated';
+
+                $data = array(     
+                    
+                    'username' => $_POST['username'],
+                    'password' => $_POST['password'],
+                    'firstname' => $_POST['firstname'],
+                    'lastname' => $_POST['lastname'],
+                    //'picture' => '',
+                    'email' => $_POST['email'],
+                    'phone' => $_POST['phone'],
+                    'prefic_name' => $_POST['preficname']  );
+                    
+                    $this->db->insert('user', $data);
+
+              
+              redirect("main/register","refresh");
             }
         }
+        //เรียกหน้า
+        
+        $this->load->view('header');  
+        $this->load->view('adduser');
     }
-	}
 
-    
-
-
-
-=======
-    $username=$this->input->post('username');
-		$password=$this->input->post('password');
-		$query ="SELECT * FROM user WHERE username='$username' AND   password='$password'";
-		$query = $this->db->query($query);
-		if($query->num_rows()>0){
-            $this->load->view('header');
-            $this->load->view('calendar');
-		}
-		else{
-            $this->load->view('login');
-		}
-	}
-
-    }
->>>>>>> fc24b750d26fd7f84a1d31426d6316db8f95f928:application/controllers/main.php
+}
