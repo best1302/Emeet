@@ -69,28 +69,40 @@
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
 
+<<<<<<< HEAD
                             <form  id="forml" name="forml" method="post" action="insertUser">
+=======
+                            <?php if  (isset($_SESSION['success'])) { ?>
+                                 <div class="alert alert-success"> <?php echo $_SESSION['success']; ?>  </div>
+                            <?php      
+                            }?>
+
+                            <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
+
+
+                            <form  id="forml" name="forml" method="post" action=" ">
+>>>>>>> 43436673ac98caac613331a48efdb5aa918460fb
                             
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Username :</label>
+                                    <label for="username" class="col-sm-3 text-right control-label col-form-label">Username :</label>
                                     <div class="col-sm-6">
                                         <input type="text" name="username" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Password :</label>
+                                    <label for="password" class="col-sm-3 text-right control-label col-form-label">Password :</label>
                                     <div class="col-sm-6">
                                         <input type="password" name="password" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">firstname :</label>
+                                    <label for="firstname" class="col-sm-3 text-right control-label col-form-label">firstname :</label>
                                     <div class="col-sm-6">
                                         <input type="text"  name="firstname" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">lastname :</label>
+                                    <label for="lastname" class="col-sm-3 text-right control-label col-form-label">lastname :</label>
                                     <div class="col-sm-6">
                                         <input type="text"  name="lastname" class="form-control">
                                     </div>
@@ -108,26 +120,26 @@
                                             </span> <a href="#" class="input-group-addon btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a> </div>
                                     </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">Email :</label>
+                                    <label for="email" class="col-sm-3 text-right control-label col-form-label">Email :</label>
                                     <div class="col-sm-6">
                                         <input type="email" name="email" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">mobile :</label>
+                                    <label for="mobil" class="col-sm-3 text-right control-label col-form-label">mobile :</label>
                                     <div class="col-sm-6">
-                                        <input type="tel"  name="mobile" class="form-control">
+                                        <input type="tel"  name="phone" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputEmail3" class="col-sm-3 text-right control-label col-form-label">preficname :</label>
+                                    <label for="preficname" class="col-sm-3 text-right control-label col-form-label">preficname :</label>
                                     <div class="col-sm-6">
                                         <input type="text" name="preficname" class="form-control">
                                     </div>
                                 </div>
                                 <center>
                                 <div>
-                                <button type="submit" class="btn btn-success">Save</button>
+                                <button type="submit" class="btn btn-success" name="register">Save</button>
                                 <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
                                 </div> 
                                 </center>
