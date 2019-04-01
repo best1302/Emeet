@@ -7,8 +7,7 @@ class Main extends CI_Controller{
     }
 
     function login(){
-        $this->load->view('login');
-        
+        $this->load->view('EM');  
     }
 
     public function register(){

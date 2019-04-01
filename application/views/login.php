@@ -45,7 +45,7 @@
     <div class="card-body">
 
       <?php if(isset($message)){ ?>
-      <h1>dddddd</h1>
+      <h1>กรุณากรอกชื่อผู้ใช้งานและรหัสผ่านใหม่</h1>
       <?php }?>
       
       <form action="/Emeet/index.php/login/showelogin" method="post" class="form-horizontal form-material ttop" id="loginform" >

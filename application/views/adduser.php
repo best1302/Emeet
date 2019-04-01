@@ -58,6 +58,9 @@
                                         <div class="buttom">
                                             <div class="btn btn-block btn-success"> <span class="text2">สร้างรายงานการประชุม</span></div>
                                         </div>
+                                        <div class="buttom">
+                                            <div class="btn btn-block btn-success"><a href="/Emeet/index.php/login/logout"><span class="text2">ออกจากระบบ</span></a> </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -69,9 +72,6 @@
                             <div class="col-sm-12 col-xs-12">
                             <center><h2 class="text3">เพิ่มบุคคลากร</h2></center>
 
-<<<<<<< HEAD
-                            <form  id="forml" name="forml" method="post" action="insertUser">
-=======
                             <?php if  (isset($_SESSION['success'])) { ?>
                                  <div class="alert alert-success"> <?php echo $_SESSION['success']; ?>  </div>
                             <?php      
@@ -79,9 +79,9 @@
 
                             <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
 
+                          
 
-                            <form  id="forml" name="forml" method="post" action=" ">
->>>>>>> 43436673ac98caac613331a48efdb5aa918460fb
+                            <form  id="forml" name="forml" method="post" action="insertUser ">
                             
                                 <div class="form-group row">
                                     <label for="username" class="col-sm-3 text-right control-label col-form-label">Username :</label>

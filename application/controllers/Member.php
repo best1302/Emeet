@@ -4,6 +4,7 @@ class Member extends CI_Controller{
         parent::__construct();
 
     }
+
     public function adduser(){  
      
       $this->load->view('header');  
@@ -20,13 +21,15 @@ class Member extends CI_Controller{
       $lastname=$this->input->post('lastname');
       $picture=$this->input->post('picture');
       $email=$this->input->post('email');
-      $phone=$this->input->post('mobile');
+      $phone=$this->input->post('phone');
       $prefic_name=$this->input->post('preficname');
-
+     
+      $key = password_hash($password, PASSWORD_BCRYPT);
+ 
       $data = array(     
         'uid' => $uid,
         'username' => $username,
-        'password' => $password,
+        'password' => $key,
         'firstname' => $firstname,
         'lastname' => $lastname,
         //'picture' => '',
@@ -58,7 +61,5 @@ class Member extends CI_Controller{
       }
    
    }
-     
-}
 
 
