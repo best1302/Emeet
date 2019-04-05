@@ -25,9 +25,20 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Niramit" rel="stylesheet">
+<style>
+    .headder{
+        font-size: 15px;
+        background-color: #79deff;
+    }
+    .font{
+        font-family: 'Niramit', sans-serif;
+        color: #000000;
+    }
+</style>
 </head>
 
-<body class="fix-header card-no-border logo-center">
+<body class="fix-header card-no-border logo-center font">
     <!-- ============================================================== -->
     <!-- Preloader - style you can find in spinners.css -->
     <!-- ============================================================== -->
@@ -81,8 +92,8 @@
                         <div class="card">
                             <div class="card-body">
                             <div class="table-responsive m-t-40">
-                                    <table id="myTable" class="table table-bordered table-striped">
-                                        <thead>
+                                    <table id="myTable" class="table table-bordered table-striped success-bordered-table">
+                                        <thead class="headder">
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Position</th>
@@ -163,15 +174,15 @@
         $(document).ready(function() {
         $('#myTable').dataTable( {
                     "oLanguage": {
-                    "sLengthMenu": "แสดง _MENU_ เร็คคอร์ด ต่อหน้า",
+                    "sLengthMenu": "แสดง _MENU_ รายการ ต่อหน้า",
                     "sZeroRecords": "ไม่เจอข้อมูลที่ค้นหา",
-                    "sInfo": "แสดง _START_ ถึง _END_ ของ _TOTAL_ เร็คคอร์ด",
-                    "sInfoEmpty": "แสดง 0 ถึง 0 ของ 0 เร็คคอร์ด",
-                    "sInfoFiltered": "(จากเร็คคอร์ดทั้งหมด _MAX_ เร็คคอร์ด)",
+                    "sInfo": "แสดง _START_ ถึง _END_ ของ _TOTAL_ รายการ",
+                    "sInfoEmpty": "แสดง 0 ถึง 0 ของ 0 รายการ",
+                    "sInfoFiltered": "(จากรายการทั้งหมด _MAX_ รายการ)",
                     "sSearch": "ค้นหา :",
                     "oPaginate": {
-                         "sNext": "ถัดไป",
-                         "sPrevious": "กลับ"
+                         "sNext": "หน้าถัดไป",
+                         "sPrevious": "ก่อนหน้า"
                                }
             }
 } );
