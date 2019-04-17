@@ -55,6 +55,9 @@
                                         <div class="buttom">
                                             <div class="btn btn-block btn-success"> <span class="text2">สร้างรายงานการประชุม</span></div>
                                         </div>
+                                        <div class="buttom">
+                                            <div class="btn btn-block btn-success"> <span class="text2">ออกจากระบบ</span></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -77,9 +80,10 @@
                           </tr>
                           </thead>
                             <tbody>
+                            <?php $i =1 ?>
                                 <?php foreach($users as $row){?>
                                 <tr>
-                                    <td><?php echo $row->uid ?></td>
+                                    <td><?php echo $i++; ?></td>
                                     <td><?php echo $row->firstname ?></td>
                                     <td><?php echo $row->lastname ?></td>
                                     <td><?php echo $row->email ?></td>

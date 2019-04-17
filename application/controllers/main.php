@@ -6,23 +6,7 @@ class Main extends CI_Controller{
         parent::__construct();
     }
     function login(){
-        if($post = $this->input->post()){
-            extract($post);
-            $sql = "select * from user where username = '$username' and password = '$password'";
-            $ret = $this->db->query($sql);
-            if($ret->num_rows()){
-                $data_ret = $ret->result();
-                $this->session->set_userdata('uid',$data_ret[0]->uid);
-                $this->session->set_userdata('firstname',$data_ret[0]->firstname);
-                $this->session->set_userdata('lastname',$data_ret[0]->lastname);
-            }else{
-                $data['message'] = "mother fucker";
-            }
-        }
-        $this->load->view('header');
-        $this->load->view('login');
-
-        
+        $this->load->view('EM');  
     }
     public function logout(){
         $this->session->session_destroy();

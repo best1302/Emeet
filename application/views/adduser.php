@@ -58,6 +58,9 @@
                                         <div class="buttom">
                                             <div class="btn btn-block btn-success"> <span class="text2">สร้างรายงานการประชุม</span></div>
                                         </div>
+                                        <div class="buttom">
+                                            <div class="btn btn-block btn-success"><a href="/Emeet/index.php/login/logout"><span class="text2">ออกจากระบบ</span></a> </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -76,8 +79,9 @@
 
                             <?php echo validation_errors('<div class="alert alert-danger">', '</div>'); ?>
 
+                          
 
-                            <form  id="forml" name="forml" method="post" action=" ">
+                            <form  id="forml" name="forml" method="post" action="insertUser ">
                             
                                 <div class="form-group row">
                                     <label for="username" class="col-sm-3 text-right control-label col-form-label">Username :</label>
@@ -88,7 +92,7 @@
                                 <div class="form-group row">
                                     <label for="password" class="col-sm-3 text-right control-label col-form-label">Password :</label>
                                     <div class="col-sm-6">
-                                        <input type="text" name="password" class="form-control">
+                                        <input type="password" name="password" class="form-control">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -141,9 +145,9 @@
                                 </center>
                                     </form>
 
-                                    <div class="button-box m-t-20">
+                                    <!-- <div class="button-box m-t-20">
                                 <a class="btn btn-success" href="showeuser">รายชื่อบุคลากร</a>
-                        </div>
+                        </div> -->
                         </div>
                     </div>
                 </div>
