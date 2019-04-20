@@ -5,15 +5,7 @@ class Main extends CI_Controller{
     function __construct(){
         parent::__construct();
     }
-    function login(){
-        $this->load->view('EM');  
-    }
-    public function logout(){
-        $this->session->session_destroy();
-        redirect(base_url."index.php/main/login");
-    }
-
-
+    
     
     public function register(){
         
@@ -49,3 +41,4 @@ class Main extends CI_Controller{
     }
 
 }
+?>

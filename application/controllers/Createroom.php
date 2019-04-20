@@ -5,10 +5,10 @@ class Createroom extends CI_Controller{
         
     }
     public  function addroom(){
-        $query = $this->db->query("Select * from user order by uid asc"); //select db มาแสดง 
-        $users = $query->result(); 
+        //$query = $this->db->query("Select * from user order by uid asc"); //select db มาแสดง 
+       // $users = $query->result(); 
       $this->load->view('header');  
-      $this->load->view('addroom',['users'=>$users]);
+      $this->load->view('addroom');
         
         
      }
