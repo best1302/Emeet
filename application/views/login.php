@@ -53,12 +53,12 @@
         <a href="javascript:void(0)" class="text-center db"><img src="/Emeet/assets/img/logo_custom1.gif" alt="Home" /><br/></a> 
         <div class="form-group m-t-40">
           <div class="col-xs-12">
-            <input class="form-control"  id="username" name="username"  type="text" required="" placeholder="Username">
+            <input class="form-control"  id="username" name="username"  type="text" required="" placeholder="username">
           </div>
         </div>
         <div class="form-group">
           <div class="col-xs-12">
-            <input class="form-control"  id="password" name="password"  type="password" required="" placeholder="Password">
+            <input class="form-control"  id="password" name="password"  type="password" required="" placeholder="password">
           </div>
         </div>
         <div class="form-group">
